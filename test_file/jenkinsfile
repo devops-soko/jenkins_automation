@@ -20,7 +20,7 @@ pipeline{
     }
     post{
         always{
-            echo "========always========"
+            echo "========always $params.test_var========"
         }
         success{
             echo "========pipeline executed successfully ========"
