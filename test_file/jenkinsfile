@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("test"){
             steps{
-                echo "========executing test!!!!========"
+                echo "========executing $params.test_var========"
             }
             post{
                 always{
