@@ -3,17 +3,17 @@ pipeline{
     stages{
         stage("test"){
             steps{
-                echo "========executing A========"
+                echo "========executing test========"
             }
             post{
                 always{
                     echo "========always========"
                 }
                 success{
-                    echo "========A executed successfully========"
+                    echo "========test executed successfully========"
                 }
                 failure{
-                    echo "========A execution failed========"
+                    echo "========test execution failed========"
                 }
             }
         }
