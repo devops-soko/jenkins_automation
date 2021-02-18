@@ -3,11 +3,11 @@ pipeline{
     stages{
         stage("test"){
             steps{
-                echo "========executing $params.test_var========"
+                echo "========executing test finish========"
             }
             post{
                 always{
-                    echo "========always  $params.test_var========"
+                    echo "========always  test finish========"
                 }
                 success{
                     echo "========test executed successfully========"
@@ -20,7 +20,7 @@ pipeline{
     }
     post{
         always{
-            echo "========always $params.test_var========"
+            echo "========always test finish========"
         }
         success{
             echo "========pipeline executed successfully ========"
